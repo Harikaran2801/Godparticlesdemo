@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Feed</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>News Feed</h1>
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search articles..." aria-label="Search articles" />
+      <button onclick="searchArticles()">Search</button>
+    </div>
+    <div class="category-filter">
+      <label for="categorySelect" aria-label="Filter articles by category">Category:</label>
+      <select id="categorySelect" onchange="filterByCategory()">
+        <option value="">All Categories</option>
+        <option value="art">Art</option>
+        <option value="exhibition">Exhibition</option>
+        <option value="culture">Culture</option>
+      </select>
+    </div>
+  </header>
+
+  <section id="news-feed">
+    <!-- Articles will be dynamically added here -->
+  </section>
+
+  <script src="endless.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
